@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "nuevo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-ortiz06/calculadora-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C-ortiz06/calculadora-/issues"
+  },
+  "homepage": "https://github.com/C-ortiz06/calculadora-#readme",
+  "description": ""
+}

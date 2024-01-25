@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>calculadora de iphone</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+  <div class="contenedor_calculadora">
+    <div class="calculadora_iphone">
+
+      <div class="pantalla_entrada_calculadora">
+        <textarea cols="40" rows="7" id="vista_previa_numero_calculadora"></textarea>
+        <input type="text" id="entrada_numero_calculadora">
+      </div>
+
+      <div class="botones_calculadora">
+
+        <div class="botones_calculadora_izquierda">
+          <div class="botones_calculadora_izquierda_arriba">
+            <div class="boton_calculadora_tamano_fijo_arriba" id="boton_limpiar_calculadora">AC</div>
+            <div class="boton_calculadora_tamano_fijo_arriba" onclick="display('+/-')">+/-</div>
+            <div class="boton_calculadora_tamano_fijo_arriba" onclick="display('%')">%</div>
+          </div>
+
+          <div class="botones_calculadora_izquierda_numeros">
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('9')">9</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('8')">8</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('7')">7</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('6')">6</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('5')">5</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('4')">4</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('3')">3</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('2')">2</div>
+            <div class="boton_calculadora_tamano_fijo_numero" onclick="display('1')">1</div>
+          </div>
+
+          <div class="botones_calculadora_izquierda_abajo">
+            <div class="boton_calculadora_tamano_fijo_abajo" id="boton_calculadora_tamano_fijo_abajo_cero"
+              onclick="display('0')">0</div>
+            <div class="boton_calculadora_tamano_fijo_abajo" onclick="display('.')">.</div>
+          </div>
+        </div>
+        <div class="botones_calculadora_derecha">
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('/')">÷</div>
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('*')">×</div>
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('-')">-</div>
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('+')">+</div>
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="displaySolve()">=</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/scrip.js"></script>
+
+</body>
+<span class="name">Carlos Ortiz</span>
+</html>
