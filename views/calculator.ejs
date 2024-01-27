@@ -2,7 +2,11 @@
 
 <head>
   <title>calculadora de iphone</title>
-  <link rel="stylesheet" href="/css/index.css">
+ <link rel="stylesheet" href="">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
@@ -19,8 +23,8 @@
         <div class="botones_calculadora_izquierda">
           <div class="botones_calculadora_izquierda_arriba">
             <div class="boton_calculadora_tamano_fijo_arriba" id="boton_limpiar_calculadora">AC</div>
-            <div class="boton_calculadora_tamano_fijo_arriba" onclick="display('+/-')">+/-</div>
             <div class="boton_calculadora_tamano_fijo_arriba" onclick="display('%')">%</div>
+            <div class="boton_calculadora_tamano_fijo_arriba" onclick="display('/')">÷</div>
           </div>
 
           <div class="botones_calculadora_izquierda_numeros">
@@ -42,7 +46,7 @@
           </div>
         </div>
         <div class="botones_calculadora_derecha">
-          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('/')">÷</div>
+          <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('delete')"><i class="fa-solid fa-delete-left"></i></div>
           <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('*')">×</div>
           <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('-')">-</div>
           <div class="boton_calculadora_tamano_fijo_naranja" onclick="display('+')">+</div>
