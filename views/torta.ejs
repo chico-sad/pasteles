@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortas Negle - Deliciosas tortas para cada ocasión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-size: 24px;
+            /* Increased for 50% zoom */
+        }
+
+        header {
+            background-color: #fff;
+            padding: 30px 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 60px;
+            color: #FF00FF;
+            /* Magenta */
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .hero {
+            background-color: #FFF0F5;
+            /* Light pink background */
+            padding: 75px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            color: #4B0082;
+            /* Indigo */
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            font-size: 36px;
+            color: #FF00FF;
+            /* Magenta */
+            margin-bottom: 45px;
+        }
+
+        .button {
+            background-color: #FF00FF;
+            /* Magenta */
+            color: white;
+            padding: 22.5px 45px;
+            text-decoration: none;
+            border-radius: 7.5px;
+            font-size: 27px;
+            margin: 0 15px;
+        }
+
+        .featured {
+            display: flex;
+            justify-content: space-between;
+            padding: 75px;
+        }
+
+        .featured-item {
+            width: 30%;
+            text-align: center;
+            background-color: #98FB98;
+            /* Pale green */
+            padding: 45px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            /* Permite alinear el contenido en columna */
+            justify-content: space-between;
+            /* Alinea el contenido dentro de la tarjeta */
+        }
+
+        .featured-item img {
+            width: 100%;
+            height: 400px;
+            /* Aumenta el tamaño de las imágenes */
+            object-fit: cover;
+            /* Ajusta la imagen sin distorsionar su proporción */
+            border-radius: 15px;
+        }
+
+        .featured-item h3 {
+            font-size: 36px;
+            color: #4B0082;
+            /* Indigo */
+            margin: 30px 0;
+        }
+
+        .featured-item .buttons {
+            background-color: #FF69B4;
+            /* Hot pink */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .featured-item a {
+            align-self: center;
+            /* Alinea el botón en el centro */
+            margin-top: auto;
+            /* Empuja el botón hacia abajo en la tarjeta */
+        }
+
+
+        .rewards {
+            background-color: #FFF0F5;
+            /* Light pink background */
+            padding: 75px;
+            text-align: center;
+        }
+
+        .rewards h2 {
+            font-size: 54px;
+            color: #4B0082;
+            /* Indigo */
+            margin-bottom: 30px;
+        }
+
+        .rewards p {
+            font-size: 27px;
+            color: #333;
+            margin-bottom: 45px;
+        }
+
+        .rewards-icons {
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+            margin-bottom: 45px;
+        }
+
+        .rewards-icons div {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .gallery img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+
+        footer {
+            background-color: #4B0082;
+            /* Indigo */
+            color: white;
+            padding: 75px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer div {
+            width: 22%;
+        }
+
+        footer h4 {
+            font-size: 30px;
+            margin-bottom: 22.5px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .imagen {
+            width: 11.5%;
+            height: 10%;
+        }
+
+        .logito {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* carrusel */
+        /* Carrusel */
+        .gallery {
+            width: 100%;
+            overflow: hidden;
+            /* Oculta el contenido que sale de los bordes */
+            position: relative;
+            /* Necesario para posicionar el contenedor del carrusel */
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            /* Oculta el contenido que sale de los bordes del contenedor */
+        }
+
+        .carousel-inner {
+    display: flex;
+    width: 200%; /* Ancho total del contenedor interno para el bucle */
+    animation: scroll-left 30s linear infinite; /* Aumenta la duración para reducir la velocidad */
+}
+
+
+        .carousel-inner img {
+            width: 23%;
+            /* Aumentado en un 15% desde el tamaño anterior (20% + 15%) */
+            height: auto;
+            /* Ajusta la altura en proporción al ancho */
+            object-fit: cover;
+            /* Ajusta la imagen sin distorsionar su proporción */
+            flex-shrink: 0;
+            /* Asegura que las imágenes no se reduzcan más allá de su tamaño original */
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+                /* Desplaza completamente el contenido */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="imagen">
+            <img class="logito" src="/images/negle.jpeg" alt="Torta de cumpleaños">
+        </div>
+        <div class="logo">Tortas Negle</div>
+        <nav>
+            <a href="#">Recogida y entrega local</a>
+            <a href="#">Envíos a nivel nacional</a>
+            <a href="#">Nuestro Menú</a>
+            <a href="#">Ofertas actuales</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>¡Difundiendo alegría en cada bocado!</h1>
+        <p>Deliciosas tortas para cada ocasión</p>
+        <a href="#" class="button">Solicita recogida y entrega local</a>
+        <a href="#" class="button">Pedidos con envío a nivel nacional</a>
+    </section>
+
+    <section class="featured">
+        <div class="featured-item">
+            <img src="/images/clasica.jpg" alt="Torta de temporada">
+            <h3>Sabores por tiempo limitado</h3>
+            <a href="#" class="buttons">Mejor date prisa</a>
+        </div>
+        <div class="featured-item">
+            <img src="/images/cum.jpg" alt="Torta de cumpleaños">
+            <h3>¡La mejor manera de decir FELIZ CUMPLEAÑOS!</h3>
+            <a href="#" class="buttons">Celebra con estilo</a>
+        </div>
+        <div class="featured-item">
+            <img src="/images/torta5.jpg" alt="Torta clásica">
+            <h3>Disponible en todo el país</h3>
+            <a href="#" class="buttons">El sabor nos une</a>
+        </div>
+    </section>
+
+
+    <section class="rewards">
+        <h2>Obtén una recompensa por recompensarte a ti mismo</h2>
+        <p>Con Tortas Negle Perks, cada celebración equivale a aún más victorias. Acumula puntos por cada dólar que
+            gastes, para que puedas darte el gusto de disfrutar de más delicias irresistibles. ¡Tortas Negle Perks, ya
+            por todas!</p>
+        <div class="rewards-icons">
+            <div>📱<br>Haz tu pedido sobre la marcha.</div>
+            <div>🏆<br>Obtenga puntos por cada dólar.</div>
+            <div>💕<br>Algunas ofertas bastante dulces.</div>
+            <div>🧁<br>¡Y por supuesto, tortas gratis!</div>
+        </div>
+        <a href="#" class="button">Descubre más</a>
+    </section>
+    <div class="gallery">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="/images/torta1.jpg" alt="Torta 1">
+                <img src="/images/torta2.jpg" alt="Torta 2">
+                <img src="/images/torta3.jpg" alt="Torta 3">
+                <img src="/images/torta4.jpg" alt="Torta 4">
+                <img src="/images/torta5.jpg" alt="Torta 5">
+                <!-- Clonar las imágenes para el bucle infinito -->
+                <img src="/images/torta1.jpg" alt="Torta 1">
+                <img src="/images/torta2.jpg" alt="Torta 2">
+                <img src="/images/torta3.jpg" alt="Torta 3">
+                <img src="/images/torta4.jpg" alt="Torta 4">
+                <img src="/images/torta5.jpg" alt="Torta 5">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <h4>Nuestra historia</h4>
+            <a href="#">¿Cómo hacer un pedido?</a>
+            <a href="#">Carreras</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Localizador de tiendas</a>
+        </div>
+        <div>
+            <h4>Tarjetas de regalo</h4>
+            <a href="#">Catering y eventos</a>
+            <a href="#">Franquicias</a>
+        </div>
+        <div>
+            <h4>Política de privacidad</h4>
+            <a href="#">Condiciones de servicio</a>
+            <a href="#">Contáctenos</a>
+            <a href="#">Política de reembolso</a>
+        </div>
+        <div>
+            <h4>Regístrate para mantenerte informado</h4>
+            <input type="email" placeholder="Dirección de correo electrónico"
+                style="width: 100%; padding: 15px; margin-bottom: 15px;">
+            <a href="#" class="button" style="width: 70%; text-align: center;">Inscribirse</a>
+        </div>
+    </footer>
+</body>
+<script src="/scripts/index.js"></script>
+
+</html>
